@@ -1,0 +1,111 @@
+/* =====////======///====/////=====////======= */
+/* media--Start */
+@media (max-width:768px) {
+
+    .parent {
+        display: -ms-grid;
+        display: grid;
+        grid-template-areas:
+            "phone phone phone phone   "
+            " learn learn learn learn "
+            "keyboard keyboard  games games "
+            "retina retina retina retina  "
+            " twitter twitter icloud icloud "
+            " laptop laptop icloud icloud"
+            "popular popular popular popular"
+            "vision vision vision vision    ";
+    }
+
+    /* ----------------- */
+    .child-1 {
+        grid-area: learn;
+    }
+
+    .child-1 img {
+        width: 100%;
+    }
+
+    /* ----------------- */
+
+    .item-2 img {
+        width: 100%;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    /* ----------------- */
+    .child-2 {
+        grid-area: phone;
+    }
+
+    .child-2 h1 {
+        font-size: 36px;
+        font-weight: 400;
+        padding-top: 0px;
+    }
+
+    /* ----------------- */
+    .child-4 .retina-2 {
+        padding-bottom: 20px;
+    }
+
+    /* ----------------- */
+    .child-5 {
+        padding-bottom: 20px;
+    }
+
+    .child-5 .text {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .child-5 .two {
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: hsla(0, 0%, 100%, 0.285);
+    }
+
+    .child-5 a {
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+
+    /* -------------------------- */
+    .child-6 {
+        padding: 40px 0;
+    }
+
+    /* ----------------------- */
+    .child-7 {
+        background-position: 50% 50%;
+    }
+
+    .child-7 .best {
+        width: 75%;
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    .child-7 h3 {
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+    }
+
+    /* ----------------------- */
+    .child-9 {
+        padding: 35px 0;
+    }
+
+    .child-9 div {
+        width: 30%;
+        padding: 5px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* media--End */
+/* =====////======///====/////=====////======= */

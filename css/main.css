@@ -1,0 +1,611 @@
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+::-moz-selection {
+    color: white;
+    background-color: brown;
+}
+
+::selection {
+    color: white;
+    background-color: brown;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    margin: 0;
+}
+
+.parent {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+        "phone phone phone phone phone phone learn learn learn learn learn learn"
+        "keyboard keyboard keyboard retina retina retina retina retina retina icloud icloud icloud"
+        "games games games laptop laptop laptop laptop laptop laptop icloud icloud icloud"
+        " twitter twitter twitter popular popular popular vision vision vision vision vision vision";
+}
+
+.child img {
+
+    display: block;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* child-1 start */
+.child-1 {
+    margin: auto;
+    background-color: #fff;
+    grid-area: phone;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.child-1 .item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 50px;
+
+}
+
+.item-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
+}
+
+.child-1 h3 {
+    line-height: 32px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    margin: 10px 0px 20px;
+    color: #333;
+    font-weight: 400;
+}
+
+.item-1 span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #9FA3A7;
+}
+
+.item-1 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #9fa3a7;
+}
+
+.item-2 img {
+    width: 80%;
+}
+
+/* child-1 end */
+/* ============================================================= */
+/* ============================================================= */
+/* child-2 start */
+.child-2 {
+    background-color: #f7f8f9;
+    grid-area: learn;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.child-2 .mor {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #9FA3A7;
+
+}
+
+.child-2 h1 {
+    max-width: 550px;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.child-2 .now {
+    margin-top: 30px;
+    color: #27b9c2;
+}
+
+.now a {
+    color: #27b9c2;
+}
+
+/* child-2 end */
+/* ============================================================= */
+/* ============================================================= */
+/* child-3 start */
+.child-3 {
+    background-color: #f05638;
+    grid-area: keyboard;
+}
+
+.child-3 {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fffbfb;
+}
+
+.child-3 img {
+    padding-top: 30px;
+}
+
+.child-3 h3 {
+    font-size: 20px;
+}
+
+.child-3 a {
+    color: #ffc80a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 35px;
+    font-size: 14px;
+}
+
+.child-3 strong {
+    font-size: 18px;
+}
+
+/* child-3 end */
+/* ============================================================= */
+/* ============================================================= */
+/* child-4 start */
+.child-4 {
+    background-color: #ffffff;
+    grid-area: retina;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+}
+
+.child-4 .retina-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+}
+
+.retina-1 div {
+    font-family: "Montserrat", sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.retina-1 h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: " Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.retina-1 img {
+    position: relative;
+    left: -44%;
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.retina-1 p {
+    padding-left: 55px;
+    flex-basis: 100%;
+}
+
+.retina-2 {
+    width: 40%;
+    margin-left: 2rem;
+    line-height: 30px;
+    font-size: 14px;
+    color: #9FA3A7;
+    font-family: "Open Sans", sans-serif;
+}
+
+.retina-2 p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.retina-2 a {
+    color: #27b9c2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.child-4 strong {
+    font-size: 18px;
+}
+
+/* child-4 end */
+/* ============================================================= */
+/* ============================================================= */
+/* child-5 start */
+.child-5 {
+    background-color: #8f76bc;
+    grid-area: icloud;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.child-5 .text {
+    width: 40%;
+    margin: auto;
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(../images/Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.child-5 img {
+    position: relative;
+    left: -8px;
+    margin-top: 20px;
+    max-width: 70%;
+    vertical-align: middle;
+    display: inline-block;
+
+
+}
+
+.child-5 .two {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.child-5 h2 {
+    font-family: "Arvo", sans-serif;
+    font-size: 32px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.child-5 .three {
+    width: 80%;
+    max-width: 290px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2;
+}
+
+.child-5 a {
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: rgb(255, 200, 10);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* layer //// */
+
+.one .test {
+
+    background-color: rgba(0, 0, 0, 0.122);
+    border-radius: 50%;
+    padding: 50px;
+
+}
+
+/* child-5 end */
+/* ============================================================= */
+/* ============================================================= */
+/* .child-6  start */
+.child-6 {
+    background-color: #f7f8f9;
+    grid-area: games;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.child-6 img {
+    width: 100%;
+    position: relative;
+    left: -7%;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.child-6 h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.child-6 a {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+.child-6 strong {
+    font-size: 18px;
+}
+
+/* .child-6  end */
+/* =============================================================== */
+/* .child-7  start */
+.child-7 {
+    background-color: #93b6b7;
+    grid-area: laptop;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: #93b6b7;
+    background-image: url(../images/UX.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.child-7 .best {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #f05638;
+}
+
+.child-7 h3 {
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.child-7 img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -7%;
+    width: 90%;
+}
+
+/* .child-7  end */
+/* ================================================================== */
+/* .child-8  start */
+.child-8 {
+    background-color: #38d5f4;
+    color: #fff;
+    grid-area: twitter;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.child-8 .twet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 240px;
+    height: 240px;
+    padding-right: 34px;
+    padding-left: 34px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #35cfed;
+    text-align: center;
+}
+
+.child-8 h3 {
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* .child-8  end */
+/* =================================================================== */
+/* .child-9  start */
+.child-9 {
+    background-color: #f7f8f9;
+    grid-area: popular;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.child-9 div {
+    background-color: #7bc424;
+    color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.child-9 h3 {
+    width: 70%;
+    text-align: center;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* .child-9  end */
+/* ========================================================================== */
+/* .child-10  start */
+.child-10 {
+    background-color: #2c2c2c;
+    grid-area: vision;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.child-10 img {
+    width: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -15%;
+}
+
+.child-10 h3 {
+    width: 34%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* .child-10  end */
